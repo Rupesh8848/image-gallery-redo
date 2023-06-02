@@ -18,7 +18,7 @@ export function generateMetadata({ params: { topic } }: PageProps) {
 
 //this functions pre builds heath, fitness and coding site (static)
 //this only works after building the project
-export function genereateStaticParams() {
+export function generateStaticParams() {
   return ["health", "fitness", "coding"].map((topic) => ({ topic }));
 }
 
