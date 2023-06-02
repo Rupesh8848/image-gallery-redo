@@ -3,13 +3,14 @@ import styles from "./TopicPage.module.css";
 
 import Image from "next/image";
 import { Suspense } from "react";
+import { Metadata } from "next";
 interface PageProps {
   params: {
     topic: string;
   };
 }
 
-export async function generateMetadata({ params: { topic } }: PageProps) {
+export function generateMetadata({ params: { topic } }: PageProps) {
   return {
     title: `${topic.charAt(0).toUpperCase() + topic.slice(1)} Image Gallery`,
   };
